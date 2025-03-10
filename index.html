@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="#main-div" style="text-decoration: none; color: black;">
+            <div class="site-identity">
+            <img src="assets/images/logo.jpg" alt="Site Logo">
+            <h4>MY PORTFOLIO</h4>
+            </div>
+        </a>
+        <div class="menu-container">
+            <ul class="nav-menu">
+                <li><a href="#main-div">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li class="sibling-4"><a href="#">Works</a></li>
+                <li class="menu-btn"><a href="#">Hire Me</a></li>
+            </ul>
+        </div>
+
+        <div class="burger-menu-btn">
+            <img src="assets/images/burger.png" alt="" onclick="toggleMenu()">
+        </div> 
+    </div>
+
+    <!--Mobile Menu-->
+    <div class="menu-container-mobile">
+        <img class="close-btn" src="assets/images/close.png" alt="" onclick="toggleMenu()">
+        <ul class="nav-menu-mobile">
+            <li><a href="#main-div">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="sibling-4"><a href="#">Works</a></li>
+            <li class="menu-btn"><a href="#">Hire Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero / Banner -->
+<div id="main-div" class="hero">
+    <div class="hero-img" style="position: relative;">
+        <img src="assets/images/hero.png" alt="Hero image">
+        <img class="small-img" src="assets/images/logo.jpg" alt="Site Logo">
+    </div>
+    <div class="hero-heading">
+        <h1 class="name">Explore My <br>
+        Portfolio</h1>
+        <p class="sub-heading">Discover My Expertise as a Full Stack Developer</p>
+        <div class="hero-button">
+            <button class="hire-me-btn" style="margin-right: 15px;">Hire Me</button>
+            <button>Contact Me</button>
+        </div>
+        <p class="small-text">Crafting Innovative Digital Solutions for Your Business</p>
+    </div>
+    </div>
+
+
+    <div class="section-2" id="about">
+        <div class="section2-div-1">
+            <div style="width: 50%;"></div>
+            <div class="image-cont">
+                <img src="assets/images/nature.jpg" alt="">
+            </div>
+        </div>
+        <div class="section2-2">
+            <img src="assets/images/instagram.png" alt="">
+            <img src="assets/images/facebook.png" alt="">
+            <p style="font-size: 20px; font-weight:bold; margin-right: 0px"></p>
+            <p style="font-size: 20px; font-weight:bold; margin-right: 0px"></p>
+            <p style="font-size: 20px; font-weight:bold; margin-right: 20px"></p>
+            <img src="assets/images/threads.png" alt="">
+            <p style="font-size: 20px; font-weight:bold; margin-right: 20px"></p>
+            <img src="assets/images/tiktok.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            document.querySelector(".menu-container-mobile").classList.toggle("active");
+        }
+        </script>
+</body>
+
+</html>
+
+    <!-- About Me Section -->
+<div class="about-me-section">
+    <div class="about-me-container">
+        <!-- Profile Image -->
+        <div class="about-me-image">
+            <img src="assets/images/profile.jpg" alt="Profile Picture">
+        </div>
+        
+        <!-- About Me Text -->
+        <div class="about-me-text">
+            <h2>About Me</h2>
+            <p>
+                As a passionate full-stack developer, I specialize in crafting innovative digital solutions that drive business success.
+                With expertise in a wide range of technologies, I work closely with clients to understand their needs and deliver tailored solutions.
+            </p>
+            <a href="#" class="about-link">My Approach</a>
+        </div>
+    </div>
+</div>
+    <!-- Skills & Expertise Section -->
+<div class="skills-section">
+    <div class="skills-container">
+        <!-- Left Side: Skills & Expertise Text -->
+        <div class="skills-text">
+            <h2>Skills & Expertise</h2>
+            <p>
+                From web development to mobile apps, database management to cloud deployments, 
+                I possess a versatile skill set that allows me to tackle complex challenges and 
+                deliver high-quality solutions.
+            </p>
+            <a href="#" class="skills-link">My Work</a>
+        </div>
+
+        <!-- Right Side: Skill Cards -->
+        <div class="skills-cards">
+            <div class="skill-card">
+                <img src="assets/images/project.jpg" alt="Recent Projects">
+                <h4>Recent Projects</h4>
+                <p>Explore my portfolio to see the impact I’ve made for my clients through visually stunning and highly functional digital experiences.</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/contact.jpg" alt="Contact Me">
+                <h4>Contact Me</h4>
+                <p>Let’s discuss how I can help bring your digital vision to life.</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/hire-me.jpg" alt="Hire Me">
+                <h4>Hire Me</h4>
+                <p>I’m available for freelance and contract opportunities.</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Get in Touch Section -->
+<div class="contact-section">
+    <!-- Left: About Section -->
+    <div class="about-box">
+        <h2>About</h2>
+        <p>
+            Proven expertise in Full-Stack Development: From front-end to back-end, I deliver cutting-edge solutions that drive business growth.
+        </p>
+        <a href="#" class="contact-btn">Contact</a>
+    </div>
+
+    <!-- Right: Get in Touch Section -->
+    <div class="contact-box">
+        <h2><i>Get in Touch</i></h2>
+        <p>
+            Ready to transform your digital landscape? Let’s connect and discuss how I can bring your vision to life.
+            With my expertise in full-stack development, I’ll craft innovative solutions that exceed expectations.
+        </p>
+        <a href="#" class="schedule-btn">Schedule a Consultation</a>
+    </div>
+</div>
+<!-- Explore, Discover, Connect Section -->
+<div class="explore-section">
+    <div class="explore-item">
+        <img src="assets/images/explore.jpg" alt="Explore">
+        <p>Explore</p>
+    </div>
+    <div class="explore-item">
+        <img src="assets/images/discover.jpg" alt="Discover">
+        <p>Discover</p>
+    </div>
+    <div class="explore-item">
+        <img src="assets/images/connect.jpg" alt="Connect">
+        <p>Connect</p>
+    </div>
+    <div class="explore-item">
+        <img src="assets/images/custom.png" alt="Custom">
+        <p>Custom</p>
+    </div>
+</div>
+    <!-- Testimonials Section -->
+<div class="testimonials">
+    <div class="testimonial-text">
+        <h2><i>Testimonials</i></h2>
+        <p>
+            "[Name] is a true master of his craft. His technical expertise, problem-solving skills, and creative 
+            approach have been instrumental in the success of our projects. We highly recommend him to anyone 
+            seeking a top-notch full-stack developer."
+        </p>
+        <p class="highlighted-text">
+            "[Name] has consistently delivered exceptional results for our organization."
+        </p>
+    </div>
+    <div class="testimonial-image">
+        <img src="assets/images/testimonial-ui.jpg" alt="Testimonial UI">
+    </div>
+</div>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="assets/images/logo.jpg" alt="Logo">
+            <p>© 2024 Codescape, Inc.<br>All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">Email</a>
+            </div>
+            <div class="footer-column">
+                <h4>Follow</h4>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
